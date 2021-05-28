@@ -3,7 +3,7 @@
 ## Tasks
 
 ### Number generator
-Create function to generate numbers. It must receive start value, by default it equals to 0.
+Create function "createCounter" to generate numbers. It should receive the start value, which by default is equal to 0.
 
 For example:
 ```js
@@ -14,7 +14,7 @@ counter(); // 47
 ```
 
 ### Multiply
-Create function to multiple values.
+Create function "multiply" to multiple values as shown below.
 
 For example:
 ```js
