@@ -6,10 +6,18 @@
 module.exports.createCounter = function createCounter(startValue = 0) {
     // Your implementation here
     let count = startValue;
-    for (i = 0; i < 3; i++) {
+
+    function increment() {
         return ++count;
     }
+
+    return increment;
 };
+
+const counter = createCounter(44);
+console.log(counter()); // 45
+console.log(counter()); // 46
+console.log(counter()); // 47
 
 /**
  *
