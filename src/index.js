@@ -3,22 +3,14 @@
  * @param startValue: {Number}
  * @returns {Function}
  */
-module.exports.createCounter = function createCounter(startValue = 0) {
+let createCounter = function createCounter(startValue = 0) {
     // Your implementation here
     let count = startValue;
-
     function increment() {
         return ++count;
     }
-
     return increment;
 };
-
-const counter = createCounter(44);
-console.log(counter()); // 45
-console.log(counter()); // 46
-console.log(counter()); // 47
-
 /**
  *
  * @param x: {Number}
