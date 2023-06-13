@@ -5,7 +5,10 @@
  */
 module.exports.createCounter = function createCounter(startValue = 0) {
     // Your implementation here
-    throw new Error('Task not implemented');
+    let count = startValue;
+    for (i = 0; i < 3; i++) {
+        return ++count;
+    }
 };
 
 /**
@@ -15,5 +18,9 @@ module.exports.createCounter = function createCounter(startValue = 0) {
  */
 module.exports.multiply = function multiply(x) {
     // Your implementation here
-    throw new Error('Task not implemented');
+    return function (y) {
+        return function (z) {
+            return x * y * z;
+        };
+    };
 };
